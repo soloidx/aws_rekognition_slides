@@ -1,0 +1,73 @@
+Python image validation with AWS
+Exploring python scripting with AWS Rekognition
+6 Nov 2017
+Tags: python, AWS, Rekognition, AI, image recognition, AWS Lambda
+
+Ider Delzo
+Software Developer, PASTPRESENTFUTURE
+soloidx@gmail.com
+@soloidx
+
+* AI? Machine learning?
+
+.image ./img/1_slide.png
+.caption image by [[http://images.google.com]]
+
+* The real truth...
+
+.image ./img/2_slide.png
+.caption images by [[http://images.google.com]]
+
+* Deep learning
+.image ./img/3_slide.jpg _ 900
+.caption image by [[http://www.mathworks.com]]
+
+* Python?
+.image ./img/4_slide.jpg _ 1000
+.caption image by [[http://www.google.com]]
+
+* AWS Rekognition
+.image ./img/5_slide.png 500 _
+.caption images by [[http://aws.amazon.com]]
+
+
+* Thank you!
+
+* #okno
+.image ./img/6_slide.jpg
+
+* Using the boto3 package
+Amazon provides a great SDK for all their resources in python you can check the  documentation in [[https://boto3.readthedocs.io/en/latest/][boto3.readthedocs.io]]
+
+*** Installing the library
+.code ./code/ex01/run.sh /START OMIT/,/END OMIT/
+
+* Case 1: Detecting objects
+- Importing the library
+.code ./code/ex02/ex02.py /IMPORT START OMIT/,/IMPORT END OMIT/
+
+- Creating the boto client
+.code ./code/ex02/ex02.py /CLIENT START OMIT/,/CLIENT END OMIT/
+
+- Sample code
+.code ./code/ex02/ex02.py /CODE START OMIT/,/CODE END OMIT/
+
+* Case 1: Detecting objects
+*** Runing...
+.play ./code/ex02/run.sh /START OMIT/,/END OMIT/
+
+* Case 2: Comparing faces
+.code ./code/ex03/ex03.py /CODE START OMIT/,/CODE END OMIT/
+.play ./code/ex03/run.sh /START OMIT/,/END OMIT/
+
+* Case 3: Looking for celebrities
+.code ./code/ex04/ex04.py /CODE START OMIT/,/CODE END OMIT/
+.play ./code/ex04/run.sh /START OMIT/,/END OMIT/
+
+* Case 4: Moderaing the image content
+.code ./code/ex05/ex05.py /CODE START OMIT/,/CODE END OMIT/
+.play ./code/ex05/run.sh /START OMIT/,/END OMIT/
+
+* Rekognition use cases
+.image ./img/7_slide.png
+.caption image by [[http://aws.amazon.com]]
